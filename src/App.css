@@ -9,3 +9,13 @@
   justify-content: space-between;
   align-items: center;
 }
+
+body {
+  background-color: rgb(247, 247, 247);
+  font-family: Roboto;
+}
+
+.app__stats {
+  display: flex;
+  /* justify-content: space-between;  */
+}
