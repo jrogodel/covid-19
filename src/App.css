@@ -4,18 +4,35 @@
   box-sizing: border-box;
 }
 
-.app__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 body {
   background-color: rgb(247, 247, 247);
   font-family: Roboto;
 }
 
+.app {
+  display: flex;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.app__left {
+  flex: 0.9;
+}
+
 .app__stats {
   display: flex;
-  /* justify-content: space-between;  */
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 750px) {
+  .app {
+    flex-direction: column;
+  }
 }
