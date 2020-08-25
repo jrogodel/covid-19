@@ -13,6 +13,7 @@ import {
 import InfoBox from "./InfoBox";
 import Table from "./Table";
 import LineGraph from "./LineGraph";
+import Map from "./Map";
 
 // countryInfo.flag
 // https://disease.sh/v3/covid-19/all
@@ -108,7 +109,7 @@ function App() {
             total={countryInfo.deaths}
           />
         </div>
-        <h2>MAP</h2>
+        <Map />
       </div>
 
       <Card className='app__right'>
@@ -116,6 +117,7 @@ function App() {
           <h3>Live Cases by Country</h3>
           <Table countries={tableData} />
           <h3>Worldwide new cases</h3>
+          <LineGraph />
         </CardContent>
       </Card>
     </div>
